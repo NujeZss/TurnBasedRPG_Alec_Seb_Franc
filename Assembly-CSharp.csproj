@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ADB7FF03-63FE-9214-25DD-9DE5DA3903F9}</ProjectGuid>
+    <ProjectGuid>{4CBE4E74-6956-E7E1-4F64-1E2EC7EA0AEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,15 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleManagerSingleton.cs" />
+    <Compile Include="Assets\Scripts\RedMonster.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
+    <Compile Include="Assets\Scripts\BlueMonster.cs" />
     <Compile Include="Assets\Scripts\BattleHUD.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\RedMonster.cs" />
-    <Compile Include="Assets\Scripts\BlueMonster.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\FightSelecTrigger.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

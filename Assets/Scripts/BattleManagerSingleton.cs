@@ -21,6 +21,9 @@ public class BattleManagerSingleton : MonoBehaviour
     public GameObject m_PlayerInst;
     public GameObject m_EnemyInst;
 
+    //public Player m_PLayerInst;
+    //public Enemy m_EnemyInst;
+
     public Text m_dialogueText;
 
     private string m_LastActionsName;
