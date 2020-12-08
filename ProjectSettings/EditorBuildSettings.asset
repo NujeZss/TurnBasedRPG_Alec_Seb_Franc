@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 6204eccbe27423c4aae89728c2a22d9a
+  - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: dbaa1b713666d514e90d0035f3fc656d
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlueMonsterScene.unity
     guid: 634cfabf817281643bd9c7393002c02d
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: d8f0d582e83f28f4aa92b7369bb161e7
   m_configObjects: {}

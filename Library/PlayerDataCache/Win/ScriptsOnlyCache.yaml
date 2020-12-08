@@ -5,6 +5,8 @@ ScriptsOnlyBuild:
     - BattleManagerSingleton
     - BlueMonster
     - FightSelecTrigger
+    - KillCountManager
+    - MainMenu
     - Player
     - PlayerMovement
     - RedMonster
@@ -51,7 +53,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -62,27 +70,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 11972}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 13142}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 13752}
+    - Class: 114
+      Script: {instanceID: 13860}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -90,6 +100,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -133,21 +147,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 13854}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 13858}
     - Class: 114
-      Script: {instanceID: 13868}
+      Script: {instanceID: 13860}
+    - Class: 114
+      Script: {instanceID: 13872}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,9 +203,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -200,27 +222,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 11972}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12480}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12482}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 13160}
+      Script: {instanceID: 13142}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13856}
+      Script: {instanceID: 13752}
+    - Class: 114
+      Script: {instanceID: 13860}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -228,6 +252,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -242,6 +270,110 @@ ScriptsOnlyBuild:
     - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/StartMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11820}
+    - Class: 114
+      Script: {instanceID: 11848}
+    - Class: 114
+      Script: {instanceID: 12004}
+    - Class: 114
+      Script: {instanceID: 12044}
+    - Class: 114
+      Script: {instanceID: 12482}
+    - Class: 114
+      Script: {instanceID: 12938}
+    - Class: 114
+      Script: {instanceID: 13476}
+    - Class: 114
+      Script: {instanceID: 13694}
+    - Class: 114
+      Script: {instanceID: 13860}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/YouWin.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11820}
+    - Class: 114
+      Script: {instanceID: 12004}
+    - Class: 114
+      Script: {instanceID: 12044}
+    - Class: 114
+      Script: {instanceID: 12482}
+    - Class: 114
+      Script: {instanceID: 12938}
+    - Class: 114
+      Script: {instanceID: 13476}
+    - Class: 114
+      Script: {instanceID: 13694}
+    - Class: 114
+      Script: {instanceID: 13860}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -264,6 +396,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: eebda81395df39d374c2f535d8d560f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KillCountManager
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -282,7 +420,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 1ed01f07f468c82db5838df0e395d91e
+      Hash: 4ac5b4ae261982b5939aedb5662f2161
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BattleManagerSingleton
@@ -300,7 +438,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: ee2465be0be5abf4554f0d47041bf4ad
+      Hash: 0fe0af2938c9d1147d9c6fc0f51249ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RedMonster
@@ -444,7 +582,7 @@ ScriptsOnlyBuild:
     className: Character
   - hash:
       serializedVersion: 2
-      Hash: ee2465be0be5abf4554f0d47041bf4ad
+      Hash: 0fe0af2938c9d1147d9c6fc0f51249ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -516,7 +654,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: ee2465be0be5abf4554f0d47041bf4ad
+      Hash: 0fe0af2938c9d1147d9c6fc0f51249ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BlueMonster
@@ -612,13 +750,19 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
+  - hash:
+      serializedVersion: 2
       Hash: a2612813f45d0ced02c3e4bc9dbea8b4
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
   - hash:
       serializedVersion: 2
-      Hash: ee2465be0be5abf4554f0d47041bf4ad
+      Hash: 32be557d318fb08fd5d020abbf8e005f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -678,7 +822,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: a7748548a74f714dc883914d0ec3342b
+      Hash: 1c9b0d2710d41d64ee87b43787f83e56
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FightSelecTrigger
@@ -720,7 +864,9 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
+  - Assets/Scenes/StartMenu.unity
   - Assets/Scenes/MainGame.unity
   - Assets/Scenes/RedMonsterScene.unity
   - Assets/Scenes/BlueMonsterScene.unity
-  playerPath: C:/Users/Nuke/Desktop/TBRPG_DEMO/TurnBased_RPG_Alec_Francis_Seb.exe
+  - Assets/Scenes/YouWin.unity
+  playerPath: E:/ScriptingSemester3/ScriptTurnBasedRPGSebVersionBackup/TBRPG_DEMO/TurnBased_RPG_Alec_Francis_Seb.exe

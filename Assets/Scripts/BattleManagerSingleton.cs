@@ -21,9 +21,6 @@ public class BattleManagerSingleton : MonoBehaviour
     public GameObject m_PlayerInst;
     public GameObject m_EnemyInst;
 
-    //public Player m_PLayerInst;
-    //public Enemy m_EnemyInst;
-
     public Text m_dialogueText;
 
     private string m_LastActionsName;
@@ -42,6 +39,8 @@ public class BattleManagerSingleton : MonoBehaviour
     private Scene m_CurrentScene;
     private string sceneString;
 
+    public GameObject m_KillManager;
+
     public static BattleManagerSingleton Instance
     {
         get
@@ -58,6 +57,12 @@ public class BattleManagerSingleton : MonoBehaviour
             }
             return instance;
         }
+    }
+
+    public void Awake()
+    {
+        m_KillManager = GameObject.FindGameObjectWithTag("Manager");
+        m_KillManager.GetComponent<KillCountManager>();
     }
 
     public void Start()
@@ -225,7 +230,22 @@ IEnumerator WonBattle()
 {
     m_dialogueText.text = "YOU WON THE BATTLE";
     yield return new WaitForSeconds(2f);
-    SceneManager.LoadScene(0);
+        if(sceneString == ("BlueMonsterScene"))
+        {
+            m_KillManager.GetComponent<KillCountManager>().m_BlueMonsterKilled = true;
+            if(m_KillManager.GetComponent<KillCountManager>().m_RedMonsterKilled == false)
+            {
+                SceneManager.LoadScene(1);
+            }         
+        }
+        else if(sceneString == ("RedMonsterScene"))
+        {
+            m_KillManager.GetComponent<KillCountManager>().m_RedMonsterKilled = true;
+            if (m_KillManager.GetComponent<KillCountManager>().m_BlueMonsterKilled == false)
+            {
+                SceneManager.LoadScene(1);
+            }
+        }    
 }
 
 IEnumerator LostBattle()

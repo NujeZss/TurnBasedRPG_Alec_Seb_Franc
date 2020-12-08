@@ -62,9 +62,11 @@
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\BlueMonster.cs" />
     <Compile Include="Assets\Scripts\BattleHUD.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FightSelecTrigger.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\KillCountManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

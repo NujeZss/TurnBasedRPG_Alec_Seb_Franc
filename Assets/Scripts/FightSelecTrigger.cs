@@ -8,25 +8,63 @@ public class FightSelecTrigger : MonoBehaviour
     public GameObject m_CanvasOpen;
     public GameObject m_PlayerMove;
 
+    public GameObject m_KillManager;
+
+    public GameObject m_RedMonsterButton;
+    public GameObject m_BlueMonsterButton;
+    public GameObject m_RedTileSpawn;
+    public GameObject m_BlueTileSpawn;
+
+    public void Awake()
+    {
+        m_KillManager = GameObject.FindGameObjectWithTag("Manager");
+        m_KillManager.GetComponent<KillCountManager>();
+    }
+
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(m_KillManager.GetComponent<KillCountManager>().m_RedMonsterKilled == true)
         {
+            m_RedTileSpawn.SetActive(false);
+        }
+        if(m_KillManager.GetComponent<KillCountManager>().m_BlueMonsterKilled == true)
+        {
+            m_BlueTileSpawn.SetActive(false);
+        }
+
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
             m_CanvasOpen.SetActive(true);
             m_PlayerMove.SetActive(false);
+
+            if(m_KillManager.GetComponent<KillCountManager>().m_RedMonsterKilled == true)
+            {
+                m_RedMonsterButton.SetActive(false);
+            }
+
+            if(m_KillManager.GetComponent<KillCountManager>().m_BlueMonsterKilled == true)
+            {
+                m_BlueMonsterButton.SetActive(false);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (this.CompareTag("BlueMonster"))
+        if(m_KillManager.GetComponent<KillCountManager>().m_BlueMonsterKilled == false)
         {
-            SceneManager.LoadScene(2);
+            if (this.CompareTag("BlueMonster"))
+            {
+                SceneManager.LoadScene(3);
+            }
         }
-        else if(this.CompareTag("RedMonster"))
+        if (m_KillManager.GetComponent<KillCountManager>().m_RedMonsterKilled == false)
         {
-            SceneManager.LoadScene(1);
-        }    
+            if (this.CompareTag("RedMonster"))
+            {
+                SceneManager.LoadScene(2);
+            }
+        }
     }
     public void QuitFightSelector()
     {
@@ -36,10 +74,10 @@ public class FightSelecTrigger : MonoBehaviour
 
     public void FightRedMonster()
     {
-        SceneManager.LoadScene(1);
+         SceneManager.LoadScene(2);
     }
     public void FightBlueMonster()
     {
-        SceneManager.LoadScene(2);
+         SceneManager.LoadScene(3);    
     }
 }
